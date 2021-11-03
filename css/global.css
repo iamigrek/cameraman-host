@@ -28,6 +28,7 @@ body {
   font: 400 18px/25px "Ruda", sans-serif;
   background-color: #010101;
   color: #fff;
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -239,4 +240,29 @@ a {
   max-width: 1000px;
   filter: drop-shadow(0px 0px 5px #fff);
   left: 0;
+}
+.btn--close {
+  color: transparent;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+.btn--close::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/sprite.svg#close);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn--close:hover {
+  transform: rotate(-90deg);
 }
