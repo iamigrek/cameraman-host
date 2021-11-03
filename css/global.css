@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Ruda";
+  src: url("../fonts/../fonts/Ruda-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Scope One";
+  src: url("../fonts/../fonts/Scope-One-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font: 400 18px/25px "Ruda", sans-serif;
+  background-color: #010101;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  max-width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #010101;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #747474;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.for-mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  .for-mobile {
+    display: block;
+  }
+}
+
+.dis-scroll {
+  overflow-y: hidden;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
+.text--main {
+  text-transform: capitalize;
+  font: 400 18px/25px "Scope One", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1330px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.title {
+  margin: 0;
+}
+.title--hero {
+  text-transform: uppercase;
+  font: 400 96px/115px "Ruda", sans-serif;
+}
+.title--hero-small {
+  font: 400 64px/78px "Ruda", sans-serif;
+}
+.title--main {
+  text-transform: uppercase;
+  font: 400 60px/70px "Ruda", sans-serif;
+  text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.4);
+}
+.title--contacts {
+  text-transform: uppercase;
+  font: 400 24px/29px "Ruda", sans-serif;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.btn--main {
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  transition: color 0.2s ease-in-out;
+}
+@media (min-width: 1025px) {
+  .btn--main::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn--main:hover {
+    color: #010101;
+  }
+  .btn--main:hover::before {
+    content: "";
+    width: 100%;
+    left: 0;
+  }
+}
+.btn--form {
+  font: 400 24px/29px "Ruda", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+@media (min-width: 1025px) {
+  .btn--form::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn--form:hover {
+    color: #010101;
+  }
+  .btn--form:hover::before {
+    content: "";
+    width: 100%;
+    left: 0;
+  }
+}
+.btn--portfolio {
+  color: #747474;
+  text-transform: uppercase;
+  font: 400 24px/29px "Ruda", sans-serif;
+  padding: 6px 15px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.btn--portfolio::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid #747474;
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+}
+.btn--portfolio:hover, .btn--portfolio-active {
+  color: #fff;
+  text-shadow: 0 0 5 #fff;
+}
+.btn--portfolio:hover::after, .btn--portfolio-active::after {
+  max-height: 1000px;
+  transition: all 0.5s ease-in-out;
+  border-color: #fff;
+  filter: drop-shadow(0px 0px 5px #fff);
+}
+.btn--category {
+  color: #747474;
+  text-transform: uppercase;
+  font: 400 16px/20px "Ruda", sans-serif;
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.btn--category::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  height: 1px;
+  background-color: #fff;
+  max-width: 0;
+  width: 100%;
+}
+.btn--category:hover, .btn--category-active {
+  color: #fff;
+  text-shadow: 0 0 5 #fff;
+}
+.btn--category:hover::after, .btn--category-active::after {
+  max-width: 1000px;
+  filter: drop-shadow(0px 0px 5px #fff);
+  left: 0;
+}
