@@ -120,10 +120,25 @@ function openPhoto() {
         if (item.id == clickedPhotoId) {
           let modalPhoto = `
 			<button class="portfolio__modal-close btn btn--close">CLOSE</button>
+	<div class="portfolio__modal-preloader-wrapper">
+      <ul class="portfolio__modal-preloader image-preloader list-reset">
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+		  </ul>
+			</div>
+
 			<img class="portfolio__modal-img" src="${item.imgUrl}" alt="modal photo">
 			<div class="portfolio__modal-bg">
 			</div>
 			`;
+
           galleryModal.innerHTML = modalPhoto;
           galleryModal.style.visibility = 'visible';
 
@@ -142,6 +157,19 @@ function openPhoto() {
             galleryModal.style.visibility = 'hidden';
             document.querySelector('body').style.overflowY = 'auto';
           });
+          document
+            .querySelector('.portfolio__modal-preloader-wrapper')
+            .addEventListener('click', () => {
+              galleryModal.style.visibility = 'hidden';
+              document.querySelector('body').style.overflowY = 'auto';
+            });
+          document.querySelector('.portfolio__modal-img').onload = function () {
+            document.querySelector(
+              '.portfolio__modal-preloader-wrapper'
+            ).style.display = 'none';
+            document.querySelector('.portfolio__modal-img').style.border =
+              '1px solid #fff';
+          };
         }
       });
     });
@@ -187,3 +215,4 @@ window.onload = function () {
     document.querySelector('body').style.overflowY = 'auto';
   }, 2000);
 };
+
