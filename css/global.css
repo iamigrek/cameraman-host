@@ -266,3 +266,36 @@ a {
 .btn--close:hover {
   transform: rotate(-90deg);
 }
+.btn--play {
+  width: 15px;
+  height: 20px;
+  background-image: url(../images/sprite.svg#play);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn--play-pause {
+  background-image: url(../images/sprite.svg#pause);
+}
+.btn--volume {
+  width: 22px;
+  height: 20px;
+  background-image: url(../images/sprite.svg#sound);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn--volume-mute {
+  background-image: url(../images/sprite.svg#mute);
+}
+.btn--full {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/sprite.svg#full);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.btn--full-opposite {
+  background-image: url(../images/sprite.svg#full-opposite);
+}

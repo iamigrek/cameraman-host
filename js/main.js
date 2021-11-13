@@ -44,9 +44,10 @@ let galleryDate = [
   },
   {
     id: randomId(),
-    imgUrl: './images/10.jpg',
-    imgMinUrl: './images/videos/1.mp4',
-    class: 'xheto',
+    imgUrl: './images/videos/1.mp4',
+    imgMinUrl: './images/min/3.jpg',
+    desc: 'реклама моршинской',
+    class: 'реклама',
     type: 'video',
     viewing: 'video',
   },
@@ -73,8 +74,9 @@ let galleryDate = [
   },
   {
     id: randomId(),
-    imgUrl: './images/9.jpg',
-    imgMinUrl: './images/videos/1.mp4',
+    imgUrl: './images/videos/1.mp4',
+    imgMinUrl: './images/min/1.jpg',
+    desc: 'реклама нижнего белья',
     class: 'reports',
     type: 'video',
     viewing: 'video',
@@ -203,8 +205,13 @@ function galleryDisplay(itemType, itemClass) {
       if (itemClass == 'all' && item.type == itemType) {
         itemsWrapper.classList.add('gallery--video');
         let galleryItem = `
-      <li class="gallery__item-video">
-        <video class="gallery__video" src="${item.imgMinUrl}" controls></video>
+      <li id="${item.id}" class="gallery__item gallery__item-video">
+        <div class="gallery__item-video-title-wrapper">
+        <h4 class="gallery__item-video-title title title--contacts">
+          ${item.desc}
+        </h4>
+        </div>
+        <img alt="gallery__img" class="gallery__video-poster" src='${item.imgMinUrl}'>
       </li>
       `;
 
@@ -216,8 +223,13 @@ function galleryDisplay(itemType, itemClass) {
       ) {
         itemsWrapper.classList.add('gallery--video');
         let galleryItem = `
-      <li class="gallery__item-video">
-        <video class="gallery__video" src="${item.imgMinUrl}" controls></video>
+      <li id="${item.id}" class="gallery__item gallery__item-video">
+      <div class="gallery__item-video-title-wrapper">
+        <h4 class="gallery__item-video-title title title--contacts">
+          ${item.desc}
+        </h4>
+        </div>
+        <img alt="gallery__img" class="gallery__video-poster" src='${item.imgMinUrl}'>
       </li>
       `;
 
@@ -270,7 +282,62 @@ function modalView() {
       galleryModal.innerHTML = '';
       galleryDate.forEach(el => {
         if (el.id == galleryModalBtnId) {
-          let modalTemplate = `
+          if (el.viewing == 'video') {
+            let modalTemplate = `
+
+		  	<button class="portfolio__modal-btn btn btn--close"></button>
+        <div class="portfolio__modal-preloader image-preloader ">
+          <ul class="image-preloader-inner list-reset">
+
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+        <li class="image-preloader__item">
+          <span class="image-preloader__el"></span>
+        </li>
+		  </ul>
+      </div>
+        <div class="portfolio__modal-player player">
+			<video class="player__video">
+				<source class="player__video-source" src="${el.imgUrl}" type="video/mp4">
+			</video>
+			<div class="player__controls">
+				<input class="player__time-progress-range" type="range" value=0>
+
+				<div class="player__bottom">
+					<ul class="player__controls-left list-reset">
+            <li class="player__controls-left-item">
+              <button class="player__play btn btn--play"></button>
+            </li>	
+            <li class="player__controls-left-item">
+              <button class="player__volume btn btn--volume"></button>
+              <input type="range" class="player__volume-range">
+            </li>
+            <li class="player__controls-left-item player__time">
+              <span class="player__time-passed player__time-el">0:00:00</span>
+              <span class="player__time-left player__time-el">0:00:00</span>
+            </li>
+					</ul>
+					<div class="player__controls-right">
+						<button class="player__full btn btn--full"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+        `;
+            galleryModal.innerHTML = modalTemplate;
+            document
+              .querySelector('.player__video')
+              .addEventListener('canplay', () => {
+                document.querySelector('.image-preloader').style.display =
+                  'none';
+              });
+            videoPlayer();
+          } else {
+            let modalTemplate = `
           <div class="portfolio__modal-preloader image-preloader ">
           <ul class="image-preloader-inner list-reset">
 
@@ -286,17 +353,26 @@ function modalView() {
 		  </ul>
       </div>
 		  	<button class="portfolio__modal-btn btn btn--close"></button>
+        
         <img alt="portfolio__modal-img" class="portfolio__modal-img" src='${el.imgUrl}'>
         `;
-          galleryModal.innerHTML += modalTemplate;
+            galleryModal.innerHTML += modalTemplate;
+            document.querySelector('.portfolio__modal-img').onload =
+              function () {
+                document.querySelector(
+                  '.portfolio__modal-img'
+                ).style.opacity = 1;
+                document.querySelector('.image-preloader').style.visibility =
+                  'hidden';
+              };
+            document
+              .querySelector('.image-preloader')
+              .addEventListener('click', galleryModalClose);
+          }
           const galleryModalCloseBtn = document.querySelector(
             '.portfolio__modal-btn'
           );
-          document.querySelector('.portfolio__modal-img').onload = function () {
-            document.querySelector('.portfolio__modal-img').style.opacity = 1;
-            document.querySelector('.image-preloader').style.visibility =
-              'hidden';
-          };
+
           galleryModalCloseBtn.addEventListener('click', () => {
             galleryModalClose();
           });
@@ -305,9 +381,6 @@ function modalView() {
               galleryModalClose();
             }
           });
-          document
-            .querySelector('.image-preloader')
-            .addEventListener('click', galleryModalClose);
         }
       });
     });
@@ -315,6 +388,7 @@ function modalView() {
 
   function galleryModalClose() {
     galleryModal.classList.remove('portfolio__modal-bg');
+    galleryModal.innerHTML = '';
     document.querySelector('body').style.overflowY = 'visible';
   }
 }
@@ -355,3 +429,127 @@ window.onload = function () {
     document.querySelector('body').style.overflowY = 'auto';
   }, 2000);
 };
+
+function videoPlayer() {
+  const playerWrapper = document.querySelector('.player');
+  const playerVideo = document.querySelector('.player__video');
+  const playerPlayBtn = document.querySelector('.player__play');
+  const playerMuteBtn = document.querySelector('.player__volume');
+  const playerVolumeRange = document.querySelector('.player__volume-range');
+  const playerFullScreen = document.querySelector('.player__full');
+  const playerProgressBar = document.querySelector(
+    '.player__time-progress-range'
+  );
+  const playerProgressPassed = document.querySelector('.player__time-passed');
+  const playerProgressLeft = document.querySelector('.player__time-left');
+  var playStatus = true;
+  var volumeStatus = true;
+  var volumeValue = 0.5;
+  var fullScreenStatus = true;
+
+  playerPlayBtn.addEventListener('click', () => {
+    playStatus ? playVideo() : pauseVideo();
+    playerPlayBtn.classList.toggle('btn--play-pause');
+  });
+
+  playerMuteBtn.addEventListener('click', muteVideo);
+
+  playerVolumeRange.addEventListener('input', () => {
+    volumeValue = playerVolumeRange.value / 100;
+    valumeVideo();
+
+    if (playerVolumeRange.value == 0) {
+      playerMuteBtn.classList.add('btn--volume-mute');
+      volumeStatus = !volumeStatus;
+    } else {
+      playerMuteBtn.classList.remove('btn--volume-mute');
+    }
+  });
+
+  playerFullScreen.addEventListener('click', fullScreenVideo);
+
+  playerVideo.ontimeupdate = progressUpdate;
+
+  playerVideo.addEventListener('dblclick', fullScreenVideo);
+
+  playerVideo.addEventListener('click', () => {
+    playStatus ? playVideo() : pauseVideo();
+    playerPlayBtn.classList.toggle('btn--play-pause');
+  });
+
+  playerProgressBar.addEventListener('input', videoRewind);
+
+  document.addEventListener('DOMContentLoaded', timeSet);
+
+  function playVideo() {
+    playerVideo.play();
+    playStatus = !playStatus;
+    playerTimeLeft();
+  }
+
+  function pauseVideo() {
+    playerVideo.pause();
+    playStatus = !playStatus;
+  }
+
+  function muteVideo() {
+    if (volumeStatus) {
+      playerVideo.volume = 0;
+      playerVolumeRange.value = 0;
+      playerMuteBtn.classList.add('btn--volume-mute');
+    } else {
+      playerVideo.volume = 1;
+      playerVolumeRange.value = volumeValue * 100;
+      playerVolumeRange.value = 50;
+      playerMuteBtn.classList.remove('btn--volume-mute');
+    }
+    volumeStatus = !volumeStatus;
+  }
+
+  function valumeVideo() {
+    playerVideo.volume = volumeValue;
+  }
+
+  function fullScreenVideo() {
+    fullScreenStatus
+      ? playerWrapper.requestFullscreen()
+      : document.exitFullscreen();
+    fullScreenStatus = !fullScreenStatus;
+    playerFullScreen.classList.toggle('btn--full-opposite');
+  }
+
+  function timeSet() {
+    let timePass = playerVideo.currentTime;
+    let playerHours = Math.floor(timePass / 60 / 60) % 24;
+    let playerMinutes = Math.floor(timePass / 60) % 60;
+    let playerSeconds = Math.floor(timePass) % 60;
+    playerSeconds = playerSeconds < 10 ? '0' + playerSeconds : playerSeconds;
+    playerMinutes = playerMinutes < 10 ? '0' + playerMinutes : playerMinutes;
+    playerProgressPassed.textContent = `${playerHours}:${playerMinutes}:${playerSeconds}`;
+  }
+
+  function playerTimeLeft() {
+    let timeLeft = playerVideo.duration;
+    let playerHours2 = Math.floor(timeLeft / 60 / 60) % 24;
+    let playerMinutes2 = Math.floor(timeLeft / 60) % 60;
+    let playerSeconds2 = Math.floor(timeLeft) % 60;
+    playerSeconds2 =
+      playerSeconds2 < 10 ? '0' + playerSeconds2 : playerSeconds2;
+    playerMinutes2 =
+      playerMinutes2 < 10 ? '0' + playerMinutes2 : playerMinutes2;
+    playerProgressLeft.textContent = `${playerHours2}:${playerMinutes2}:${playerSeconds2}`;
+  }
+
+  function progressUpdate() {
+    let timePass = playerVideo.currentTime;
+    let timeLeft = playerVideo.duration;
+    playerProgressBar.setAttribute('max', timeLeft);
+    playerProgressBar.value = timePass;
+    console.log(playerProgressBar.value);
+    timeSet();
+  }
+
+  function videoRewind() {
+    playerVideo.currentTime = playerProgressBar.value;
+  }
+}
