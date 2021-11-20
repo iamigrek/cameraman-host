@@ -7,11 +7,92 @@ burgerLink.forEach(el => {
 });
 
 function burgerMenuShow() {
-  burgerBtn.classList.toggle('btn--burger-active');
-  document
-    .querySelector('.header__inner')
-    .classList.toggle('header__inner--active');
+  if (getComputedStyle(burgerBtn).display != 'none') {
+    burgerBtn.classList.toggle('btn--burger-active');
+    document
+      .querySelector('.header__inner')
+      .classList.toggle('header__inner--active');
+    document.body.classList.toggle('dis-scroll');
+  }
 }
+
+//Данные
+let galleryDate = [
+  {
+    id: randomId(),
+    imgUrl: './images/1.jpg',
+    imgMinUrl: './images/min/1.jpg',
+    class: 'reports',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/2.jpg',
+    imgMinUrl: './images/min/2.jpg',
+    class: 'portraits',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/3.jpg',
+    imgMinUrl: './images/min/3.jpg',
+    class: 'reports',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/4.jpg',
+    imgMinUrl: './images/min/4.jpg',
+    class: 'portraits',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/5.jpg',
+    imgMinUrl: './images/min/5.jpg',
+    class: 'portraits',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/videos/1.mp4',
+    imgMinUrl: './images/min/3.jpg',
+    desc: 'реклама моршинской',
+    class: 'реклама',
+    type: 'video',
+    viewing: 'video',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/6.jpg',
+    imgMinUrl: './images/min/6.jpg',
+    class: 'reports',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/7.jpg',
+    imgMinUrl: './images/min/7.jpg',
+    class: 'weddings',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/8.jpg',
+    imgMinUrl: './images/min/8.jpg',
+    class: 'weddings',
+    type: 'photo',
+  },
+  {
+    id: randomId(),
+    imgUrl: './images/videos/1.mp4',
+    imgMinUrl: './images/min/1.jpg',
+    desc: 'реклама нижнего белья',
+    class: 'reports',
+    type: 'video',
+    viewing: 'video',
+  },
+];
 
 const form = document.querySelectorAll('.form');
 const phoneCheck = /^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/;
@@ -178,84 +259,6 @@ function randomId() {
   );
 }
 
-//Данные
-let galleryDate = [
-  {
-    id: randomId(),
-    imgUrl: './images/1.jpg',
-    imgMinUrl: './images/min/1.jpg',
-    class: 'reports',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/2.jpg',
-    imgMinUrl: './images/min/2.jpg',
-    class: 'portraits',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/3.jpg',
-    imgMinUrl: './images/min/3.jpg',
-    class: 'reports',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/4.jpg',
-    imgMinUrl: './images/min/4.jpg',
-    class: 'portraits',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/5.jpg',
-    imgMinUrl: './images/min/5.jpg',
-    class: 'portraits',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/videos/1.mp4',
-    imgMinUrl: './images/min/3.jpg',
-    desc: 'реклама моршинской',
-    class: 'реклама',
-    type: 'video',
-    viewing: 'video',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/6.jpg',
-    imgMinUrl: './images/min/6.jpg',
-    class: 'reports',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/7.jpg',
-    imgMinUrl: './images/min/7.jpg',
-    class: 'weddings',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/8.jpg',
-    imgMinUrl: './images/min/8.jpg',
-    class: 'weddings',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/videos/1.mp4',
-    imgMinUrl: './images/min/1.jpg',
-    desc: 'реклама нижнего белья',
-    class: 'reports',
-    type: 'video',
-    viewing: 'video',
-  },
-];
-
 //types
 typeBtnsDisplay();
 function typeBtnsDisplay() {
@@ -372,8 +375,6 @@ function galleryDisplay(itemType, itemClass) {
   itemsWrapper.innerHTML = '';
 
   galleryDate.forEach(item => {
-    console.log(itemType, itemClass);
-
     if (item.viewing == 'video') {
       if (itemClass == 'all' && item.type == itemType) {
         itemsWrapper.classList.add('gallery--video');
@@ -628,11 +629,16 @@ function heroModalOpen() {
   document.querySelector('body').classList.toggle('dis-scroll');
 }
 
+const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+console.log(lang);
+
 function videoPlayer() {
   const playerWrapper = document.querySelector('.player');
   const playerVideo = document.querySelector('.player__video');
   const playerPlayBtn = document.querySelector('.player__play');
   const playerMuteBtn = document.querySelector('.player__volume');
+  const playerControls = document.querySelector('.player__controls');
   const playerVolumeRange = document.querySelector('.player__volume-range');
   const playerFullScreen = document.querySelector('.player__full');
   const playerProgressBar = document.querySelector(
@@ -678,6 +684,11 @@ function videoPlayer() {
   playerProgressBar.addEventListener('input', videoRewind);
 
   document.addEventListener('DOMContentLoaded', timeSet);
+
+  playerWrapper.addEventListener('mousemove', e => {
+    playerControls.classList.remove('player__controls--hidden');
+    mousCheck(e);
+  });
 
   function playVideo() {
     playerVideo.play();
@@ -743,11 +754,24 @@ function videoPlayer() {
     let timeLeft = playerVideo.duration;
     playerProgressBar.setAttribute('max', timeLeft);
     playerProgressBar.value = timePass;
-    console.log(playerProgressBar.value);
     timeSet();
   }
 
   function videoRewind() {
     playerVideo.currentTime = playerProgressBar.value;
+  }
+
+  function mousCheck(e) {
+    let x = e.pageX;
+    let y = e.pageY;
+    setTimeout(() => {
+      let xAfter = e.pageX;
+      let yAfter = e.pageY;
+      if (xAfter != x || yAfter != y) {
+        playerControls.classList.remove('player__controls--hidden');
+      } else {
+        playerControls.classList.add('player__controls--hidden');
+      }
+    }, 7000);
   }
 }
