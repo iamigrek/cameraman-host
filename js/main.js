@@ -18,79 +18,378 @@ function burgerMenuShow() {
 
 //Данные
 let galleryDate = [
+  //Портреты
   {
     id: randomId(),
-    imgUrl: './images/1.jpg',
-    imgMinUrl: './images/min/1.jpg',
-    class: 'reports',
-    type: 'photo',
+    viewing: 'photo',
+    imgUrl: './images/portraits-1.jpg',
+    imgMinUrl: './images/portraits-1-min.jpg',
+    ru: { class: 'Портреты', type: 'Фото', desc: 'Портрет мужчины' },
+    uk: { class: 'Портрети', type: 'Фото', desc: 'Портрет чоловіка' },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Portrait of a man' },
   },
   {
     id: randomId(),
-    imgUrl: './images/2.jpg',
-    imgMinUrl: './images/min/2.jpg',
-    class: 'portraits',
-    type: 'photo',
+    viewing: 'photo',
+    imgUrl: './images/portraits-2.jpg',
+    imgMinUrl: './images/portraits-2-min.jpg',
+    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка в поле' },
+    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина в полі' },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Girl in the field' },
   },
   {
     id: randomId(),
-    imgUrl: './images/3.jpg',
-    imgMinUrl: './images/min/3.jpg',
-    class: 'reports',
-    type: 'photo',
+    viewing: 'photo',
+    imgUrl: './images/portraits-3.jpg',
+    imgMinUrl: './images/portraits-3-min.jpg',
+    ru: { class: 'Портреты', type: 'Фото', desc: 'Портрет военного' },
+    uk: { class: 'Портрети', type: 'Фото', desc: 'Портрет військового' },
+    en: {
+      class: 'Portraits',
+      type: 'Photo',
+      desc: 'Portrait of a military man',
+    },
+  },
+
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/portraits-4.jpg',
+    imgMinUrl: './images/portraits-4-min.jpg',
+    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка в платке' },
+    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина в хустці' },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Girl in a headscarf' },
   },
   {
     id: randomId(),
-    imgUrl: './images/4.jpg',
-    imgMinUrl: './images/min/4.jpg',
-    class: 'portraits',
-    type: 'photo',
+    viewing: 'photo',
+    imgUrl: './images/portraits-5.jpg',
+    imgMinUrl: './images/portraits-5-min.jpg',
+    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка с букетом' },
+    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина з букетом' },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Girl with a bouquet' },
   },
   {
     id: randomId(),
-    imgUrl: './images/5.jpg',
-    imgMinUrl: './images/min/5.jpg',
-    class: 'portraits',
-    type: 'photo',
+    viewing: 'photo',
+    imgUrl: './images/portraits-6.jpg',
+    imgMinUrl: './images/portraits-6-min.jpg',
+    ru: {
+      class: 'Портреты',
+      type: 'Фото',
+      desc: 'Урбанистический портрет мужчины',
+    },
+    uk: {
+      class: 'Портрети',
+      type: 'Фото',
+      desc: 'Урбаністичний портрет чоловіка',
+    },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Urban portrait of a man' },
   },
   {
     id: randomId(),
-    imgUrl: './images/videos/1.mp4',
-    imgMinUrl: './images/min/3.jpg',
-    desc: 'реклама моршинской',
-    class: 'реклама',
-    type: 'video',
+    viewing: 'photo',
+    imgUrl: './images/portraits-7.jpg',
+    imgMinUrl: './images/portraits-7-min.jpg',
+    ru: {
+      class: 'Портреты',
+      type: 'Фото',
+      desc: 'Девушка с мыльными пузырями',
+    },
+    uk: {
+      class: 'Портрети',
+      type: 'Фото',
+      desc: 'Дівчина з мильними бульбашками',
+    },
+    en: { class: 'Portraits', type: 'Photo', desc: 'Girl with soap bubbles' },
+  },
+  //Репортаж
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-1.jpg',
+    imgMinUrl: './images/reportage-1-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-2.jpg',
+    imgMinUrl: './images/reportage-2-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-3.jpg',
+    imgMinUrl: './images/reportage-3-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-4.jpg',
+    imgMinUrl: './images/reportage-4-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-7.jpg',
+    imgMinUrl: './images/reportage-7-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-8.jpg',
+    imgMinUrl: './images/reportage-8-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-9.jpg',
+    imgMinUrl: './images/reportage-9-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/reportage-10.jpg',
+    imgMinUrl: './images/reportage-10-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: 'Репортаж',
+    },
+    uk: {
+      class: 'Репортаж',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Reportage', type: 'Photo', desc: '' },
+  },
+
+  //свадьба
+
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-1.jpg',
+    imgMinUrl: './images/wedding-1-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-2.jpg',
+    imgMinUrl: './images/wedding-2-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-3.jpg',
+    imgMinUrl: './images/wedding-3-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-4.jpg',
+    imgMinUrl: './images/wedding-4-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-5.jpg',
+    imgMinUrl: './images/wedding-5-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-6.jpg',
+    imgMinUrl: './images/wedding-6-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  {
+    id: randomId(),
+    viewing: 'photo',
+    imgUrl: './images/wedding-7.jpg',
+    imgMinUrl: './images/wedding-7-min.jpg',
+    ru: {
+      class: 'Свадьба',
+      type: 'Фото',
+      desc: 'Свадьба',
+    },
+    uk: {
+      class: 'Весілля',
+      type: 'Фото',
+      desc: '',
+    },
+    en: { class: 'Wedding', type: 'Photo', desc: '' },
+  },
+  //Video
+  {
+    id: randomId(),
     viewing: 'video',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/6.jpg',
-    imgMinUrl: './images/min/6.jpg',
-    class: 'reports',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/7.jpg',
-    imgMinUrl: './images/min/7.jpg',
-    class: 'weddings',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
-    imgUrl: './images/8.jpg',
-    imgMinUrl: './images/min/8.jpg',
-    class: 'weddings',
-    type: 'photo',
-  },
-  {
-    id: randomId(),
+    videoType: 'video/mp4',
     imgUrl: './images/videos/1.mp4',
-    imgMinUrl: './images/min/1.jpg',
-    desc: 'реклама нижнего белья',
-    class: 'reports',
-    type: 'video',
+    imgMinUrl: './images/portraits-7-min.jpg',
+    ru: {
+      class: 'Репортаж',
+      type: 'Видео',
+      desc: 'реклама нижнего белья и что то еще, веники',
+    },
+    uk: { class: 'Портрети', type: 'Відео', desc: 'Портрет мужчины' },
+    en: { class: 'Portriect', type: 'Video', desc: 'Портрет мужчины' },
+  },
+  {
+    id: randomId(),
     viewing: 'video',
+    videoType: 'video/mp4',
+    imgUrl: './images/videos/2.mp4',
+    imgMinUrl: './images/portraits-6-min.jpg',
+    ru: {
+      class: 'Что то еще',
+      type: 'Видео',
+      desc: 'Что то еще',
+    },
+    uk: { class: 'Что то еще', type: 'Відео', desc: 'Что то еще' },
+    en: { class: 'Something else', type: 'Video', desc: 'Something else' },
   },
 ];
 
@@ -98,6 +397,83 @@ const form = document.querySelectorAll('.form');
 const phoneCheck = /^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/;
 const emailCheck =
   /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+
+errorMessages = [
+  {
+    ru: {
+      invPhone: 'Некорректный номер!',
+      invEmail: 'Некорректная почта!',
+      invClear: 'Нужно что то написать!',
+    },
+    uk: {
+      invPhone: 'Некоректний номер!',
+      invEmail: 'Некоректна пошта!',
+      invClear: 'Потрібно щось написати!',
+    },
+    en: {
+      invPhone: 'Invalid phone number!',
+      invEmail: 'Invalid email!',
+      invClear: 'First enter the data!',
+    },
+  },
+];
+
+function phoneError() {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  errorMessages.forEach(item => {
+    switch (lang) {
+      case 'en':
+        invPhone = item.en.invPhone;
+        break;
+      case 'uk':
+        invPhone = item.uk.invPhone;
+        break;
+      default:
+        invPhone = item.ru.invPhone;
+        break;
+    }
+  });
+  return invPhone;
+}
+
+function emailError() {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  errorMessages.forEach(item => {
+    switch (lang) {
+      case 'en':
+        invEmail = item.en.invEmail;
+        break;
+      case 'uk':
+        invEmail = item.uk.invEmail;
+        break;
+      default:
+        invEmail = item.ru.invEmail;
+        break;
+    }
+  });
+  return invEmail;
+}
+
+function allError() {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  errorMessages.forEach(item => {
+    switch (lang) {
+      case 'en':
+        invClear = item.en.invClear;
+        break;
+      case 'uk':
+        invClear = item.uk.invClear;
+        break;
+      default:
+        invClear = item.ru.invClear;
+        break;
+    }
+  });
+  return invClear;
+}
 
 for (let j = 0; j < form.length; j++) {
   form[j].addEventListener('submit', e => {
@@ -143,7 +519,7 @@ function formCheck(e, phone, email, j) {
     } else if (emailCheck.test(email.value) || !phoneCheck.test(phone.value)) {
       phone.parentElement.classList.add('form__item--error');
       phone.parentElement.querySelector('.form__error').textContent =
-        'Некорректный номер';
+        phoneError();
       e.preventDefault();
     } else {
       e.preventDefault();
@@ -162,7 +538,7 @@ function formCheck(e, phone, email, j) {
     } else if (phoneCheck.test(phone.value) || !emailCheck.test(email.value)) {
       email.parentElement.classList.add('form__item--error');
       email.parentElement.querySelector('.form__error').textContent =
-        'Некорректная почта';
+        emailError();
       e.preventDefault();
     } else {
       e.preventDefault();
@@ -172,10 +548,8 @@ function formCheck(e, phone, email, j) {
   if (phone.value == '' && email.value == '') {
     phone.parentElement.classList.add('form__item--error');
     email.parentElement.classList.add('form__item--error');
-    phone.parentElement.querySelector('.form__error').textContent =
-      'Нужно что то написать';
-    email.parentElement.querySelector('.form__error').textContent =
-      'Нужно что то написать';
+    phone.parentElement.querySelector('.form__error').textContent = allError();
+    email.parentElement.querySelector('.form__error').textContent = allError();
     e.preventDefault();
   }
 }
@@ -259,6 +633,46 @@ function randomId() {
   );
 }
 
+function selectType(item) {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  console.log(lang);
+  if (lang == 'en') {
+    itemType = item.en.type;
+  } else if (lang == 'uk') {
+    itemType = item.uk.type;
+  } else {
+    itemType = item.ru.type;
+  }
+  return itemType;
+}
+
+function selectClass(item) {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  if (lang == 'en') {
+    itemClass = item.en.class;
+  } else if (lang == 'uk') {
+    itemClass = item.uk.class;
+  } else {
+    itemClass = item.ru.class;
+  }
+  return itemClass;
+}
+
+function selectDesc(item) {
+  const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+  if (lang == 'en') {
+    itemDesc = item.en.desc;
+  } else if (lang == 'uk') {
+    itemDesc = item.uk.desc;
+  } else {
+    itemDesc = item.ru.desc;
+  }
+  return itemDesc;
+}
+
 //types
 typeBtnsDisplay();
 function typeBtnsDisplay() {
@@ -268,7 +682,7 @@ function typeBtnsDisplay() {
   galleryDate.forEach(item => {
     const typeTemplate = {
       id: Math.random(),
-      type: item.type,
+      type: selectType(item),
     };
     typesData.push(typeTemplate);
   });
@@ -310,14 +724,16 @@ function classBtnsDisplay(type) {
   ];
 
   galleryDate.forEach(item => {
-    if (item.type == type) {
+    if (selectType(item) == type) {
       const classTemplate = {
         id: Math.random(),
-        class: item.class,
+        class: selectClass(item),
       };
       classData.push(classTemplate);
     }
   });
+
+  console.log(classData);
 
   const classDataSort = classData.reduce((unique, o) => {
     if (!unique.some(obj => obj.class === o.class)) {
@@ -376,22 +792,24 @@ function galleryDisplay(itemType, itemClass) {
 
   galleryDate.forEach(item => {
     if (item.viewing == 'video') {
-      if (itemClass == 'all' && item.type == itemType) {
+      if (itemClass == 'all' && selectType(item) == itemType) {
         itemsWrapper.classList.add('gallery--video');
         let galleryItem = `
       <li id="${item.id}" class="gallery__item gallery__item-video">
         <div class="gallery__item-video-title-wrapper">
         <h4 class="gallery__item-video-title title title--contacts">
-          ${item.desc}
+          ${selectDesc(item)}
         </h4>
         </div>
-        <img alt="gallery__img" class="gallery__video-poster" src='${item.imgMinUrl}'>
+        <img alt="${selectDesc(item)}" class="gallery__video-poster" src='${
+          item.imgMinUrl
+        }'>
       </li>
       `;
 
         itemsWrapper.innerHTML += galleryItem;
       } else if (
-        (item.type == itemType && item.class == itemClass) ||
+        (selectType(item) == itemType && selectClass(item) == itemClass) ||
         itemType == '' ||
         itemClass == ''
       ) {
@@ -400,28 +818,32 @@ function galleryDisplay(itemType, itemClass) {
       <li id="${item.id}" class="gallery__item gallery__item-video">
       <div class="gallery__item-video-title-wrapper">
         <h4 class="gallery__item-video-title title title--contacts">
-          ${item.desc}
+          ${selectDesc(item)}
         </h4>
         </div>
-        <img alt="gallery__img" class="gallery__video-poster" src='${item.imgMinUrl}'>
+        <img alt="${selectDesc(item)}" class="gallery__video-poster" src='${
+          item.imgMinUrl
+        }'>
       </li>
       `;
 
         itemsWrapper.innerHTML += galleryItem;
       }
     } else {
-      if (itemClass == 'all' && item.type == itemType) {
+      if (itemClass == 'all' && selectType(item) == itemType) {
         itemsWrapper.classList.remove('gallery--video');
 
         let galleryItem = `
       <li id="${item.id}" class="gallery__item">
-        <img alt="gallery__img" class="gallery__img" src='${item.imgMinUrl}'>
+        <img alt="${selectDesc(item)}" class="gallery__img" src='${
+          item.imgMinUrl
+        }'>
       </li>
       `;
 
         itemsWrapper.innerHTML += galleryItem;
       } else if (
-        (item.type == itemType && item.class == itemClass) ||
+        (selectType(item) == itemType && selectClass(item) == itemClass) ||
         itemType == '' ||
         itemClass == ''
       ) {
@@ -429,7 +851,9 @@ function galleryDisplay(itemType, itemClass) {
 
         let galleryItem = `
       <li id="${item.id}" class="gallery__item">
-        <img alt="gallery__img" class="gallery__img" src='${item.imgMinUrl}'>
+        <img alt="${selectDesc(item)}" class="gallery__img" src='${
+          item.imgMinUrl
+        }'>
       </li>
       `;
 
@@ -454,9 +878,9 @@ function modalView() {
       const galleryModalBtnId = item.getAttribute('id');
 
       galleryModal.innerHTML = '';
-      galleryDate.forEach(el => {
-        if (el.id == galleryModalBtnId) {
-          if (el.viewing == 'video') {
+      galleryDate.forEach(item => {
+        if (item.id == galleryModalBtnId) {
+          if (item.viewing == 'video') {
             let modalTemplate = `
 
 		  	<button class="portfolio__modal-btn btn btn--close"></button>
@@ -476,7 +900,7 @@ function modalView() {
       </div>
         <div class="portfolio__modal-player player">
 			<video class="player__video">
-				<source class="player__video-source" src="${el.imgUrl}" type="video/mp4">
+				<source class="player__video-source" src="${item.imgUrl}" type="${item.videoType}">
 			</video>
 			<div class="player__controls">
 				<input class="player__time-progress-range" type="range" value=0>
@@ -528,7 +952,9 @@ function modalView() {
       </div>
 		  	<button class="portfolio__modal-btn btn btn--close"></button>
         
-        <img alt="portfolio__modal-img" class="portfolio__modal-img" src='${el.imgUrl}'>
+        <img alt="${selectDesc(item)}" class="portfolio__modal-img" src='${
+              item.imgUrl
+            }'>
         `;
             galleryModal.innerHTML += modalTemplate;
             document.querySelector('.portfolio__modal-img').onload =
@@ -629,9 +1055,9 @@ function heroModalOpen() {
   document.querySelector('body').classList.toggle('dis-scroll');
 }
 
-const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+// const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
 
-console.log(lang);
+// console.log(lang);
 
 function videoPlayer() {
   const playerWrapper = document.querySelector('.player');
@@ -685,9 +1111,9 @@ function videoPlayer() {
 
   document.addEventListener('DOMContentLoaded', timeSet);
 
-  playerWrapper.addEventListener('mousemove', e => {
+  playerWrapper.addEventListener('mousemove', () => {
     playerControls.classList.remove('player__controls--hidden');
-    mousCheck(e);
+    mousCheck();
   });
 
   function playVideo() {
@@ -761,17 +1187,9 @@ function videoPlayer() {
     playerVideo.currentTime = playerProgressBar.value;
   }
 
-  function mousCheck(e) {
-    let x = e.pageX;
-    let y = e.pageY;
+  function mousCheck() {
     setTimeout(() => {
-      let xAfter = e.pageX;
-      let yAfter = e.pageY;
-      if (xAfter != x || yAfter != y) {
-        playerControls.classList.remove('player__controls--hidden');
-      } else {
-        playerControls.classList.add('player__controls--hidden');
-      }
-    }, 7000);
+      playerControls.classList.add('player__controls--hidden');
+    }, 10000);
   }
 }
