@@ -16,383 +16,6 @@ function burgerMenuShow() {
   }
 }
 
-//Данные
-let galleryDate = [
-  //Портреты
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-1.jpg',
-    imgMinUrl: './images/portraits-1-min.jpg',
-    ru: { class: 'Портреты', type: 'Фото', desc: 'Портрет мужчины' },
-    uk: { class: 'Портрети', type: 'Фото', desc: 'Портрет чоловіка' },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Portrait of a man' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-2.jpg',
-    imgMinUrl: './images/portraits-2-min.jpg',
-    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка в поле' },
-    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина в полі' },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Girl in the field' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-3.jpg',
-    imgMinUrl: './images/portraits-3-min.jpg',
-    ru: { class: 'Портреты', type: 'Фото', desc: 'Портрет военного' },
-    uk: { class: 'Портрети', type: 'Фото', desc: 'Портрет військового' },
-    en: {
-      class: 'Portraits',
-      type: 'Photo',
-      desc: 'Portrait of a military man',
-    },
-  },
-
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-4.jpg',
-    imgMinUrl: './images/portraits-4-min.jpg',
-    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка в платке' },
-    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина в хустці' },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Girl in a headscarf' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-5.jpg',
-    imgMinUrl: './images/portraits-5-min.jpg',
-    ru: { class: 'Портреты', type: 'Фото', desc: 'Девушка с букетом' },
-    uk: { class: 'Портрети', type: 'Фото', desc: 'Дівчина з букетом' },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Girl with a bouquet' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-6.jpg',
-    imgMinUrl: './images/portraits-6-min.jpg',
-    ru: {
-      class: 'Портреты',
-      type: 'Фото',
-      desc: 'Урбанистический портрет мужчины',
-    },
-    uk: {
-      class: 'Портрети',
-      type: 'Фото',
-      desc: 'Урбаністичний портрет чоловіка',
-    },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Urban portrait of a man' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/portraits-7.jpg',
-    imgMinUrl: './images/portraits-7-min.jpg',
-    ru: {
-      class: 'Портреты',
-      type: 'Фото',
-      desc: 'Девушка с мыльными пузырями',
-    },
-    uk: {
-      class: 'Портрети',
-      type: 'Фото',
-      desc: 'Дівчина з мильними бульбашками',
-    },
-    en: { class: 'Portraits', type: 'Photo', desc: 'Girl with soap bubbles' },
-  },
-  //Репортаж
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-1.jpg',
-    imgMinUrl: './images/reportage-1-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-2.jpg',
-    imgMinUrl: './images/reportage-2-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-3.jpg',
-    imgMinUrl: './images/reportage-3-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-4.jpg',
-    imgMinUrl: './images/reportage-4-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-7.jpg',
-    imgMinUrl: './images/reportage-7-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-8.jpg',
-    imgMinUrl: './images/reportage-8-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-9.jpg',
-    imgMinUrl: './images/reportage-9-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/reportage-10.jpg',
-    imgMinUrl: './images/reportage-10-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: 'Репортаж',
-    },
-    uk: {
-      class: 'Репортаж',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Reportage', type: 'Photo', desc: '' },
-  },
-
-  //свадьба
-
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-1.jpg',
-    imgMinUrl: './images/wedding-1-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-2.jpg',
-    imgMinUrl: './images/wedding-2-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-3.jpg',
-    imgMinUrl: './images/wedding-3-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-4.jpg',
-    imgMinUrl: './images/wedding-4-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-5.jpg',
-    imgMinUrl: './images/wedding-5-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-6.jpg',
-    imgMinUrl: './images/wedding-6-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  {
-    id: randomId(),
-    viewing: 'photo',
-    imgUrl: './images/wedding-7.jpg',
-    imgMinUrl: './images/wedding-7-min.jpg',
-    ru: {
-      class: 'Свадьба',
-      type: 'Фото',
-      desc: 'Свадьба',
-    },
-    uk: {
-      class: 'Весілля',
-      type: 'Фото',
-      desc: '',
-    },
-    en: { class: 'Wedding', type: 'Photo', desc: '' },
-  },
-  //Video
-  {
-    id: randomId(),
-    viewing: 'video',
-    videoType: 'video/mp4',
-    imgUrl: './images/videos/1.mp4',
-    imgMinUrl: './images/portraits-7-min.jpg',
-    ru: {
-      class: 'Репортаж',
-      type: 'Видео',
-      desc: 'реклама нижнего белья и что то еще, веники',
-    },
-    uk: { class: 'Портрети', type: 'Відео', desc: 'Портрет мужчины' },
-    en: { class: 'Portriect', type: 'Video', desc: 'Портрет мужчины' },
-  },
-  {
-    id: randomId(),
-    viewing: 'video',
-    videoType: 'video/mp4',
-    imgUrl: './images/videos/2.mp4',
-    imgMinUrl: './images/portraits-6-min.jpg',
-    ru: {
-      class: 'Что то еще',
-      type: 'Видео',
-      desc: 'Что то еще',
-    },
-    uk: { class: 'Что то еще', type: 'Відео', desc: 'Что то еще' },
-    en: { class: 'Something else', type: 'Video', desc: 'Something else' },
-  },
-];
-
 const form = document.querySelectorAll('.form');
 const phoneCheck = /^((\+?3)?8)?((0\(\d{2}\)?)|(\(0\d{2}\))|(0\d{2}))\d{7}$/;
 const emailCheck =
@@ -636,7 +259,6 @@ function randomId() {
 function selectType(item) {
   const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
 
-  console.log(lang);
   if (lang == 'en') {
     itemType = item.en.type;
   } else if (lang == 'uk') {
@@ -673,128 +295,133 @@ function selectDesc(item) {
   return itemDesc;
 }
 
-//types
-typeBtnsDisplay();
-function typeBtnsDisplay() {
-  const typeBtnWrapepr = document.querySelector('.portfolio-main');
-  const typesData = [];
+fetch('../data.json')
+  .then(data => {
+    return data.text();
+  })
+  .then(data => {
+    const galleryDate = JSON.parse(data);
 
-  galleryDate.forEach(item => {
-    const typeTemplate = {
-      id: Math.random(),
-      type: selectType(item),
-    };
-    typesData.push(typeTemplate);
-  });
+    //types
+    typeBtnsDisplay();
+    function typeBtnsDisplay() {
+      const typeBtnWrapepr = document.querySelector('.portfolio-main');
+      const typesData = [];
 
-  const typesDataSort = typesData.reduce((unique, o) => {
-    if (!unique.some(obj => obj.type === o.type)) {
-      unique.push(o);
-    }
-    return unique;
-  }, []);
+      galleryDate.forEach(item => {
+        const typeTemplate = {
+          id: Math.random(),
+          type: selectType(item),
+        };
+        typesData.push(typeTemplate);
+      });
 
-  typeBtnWrapepr.innerHTML = '';
-  classBtnsDisplay(typesDataSort[0].type);
-  // classfilter(typesDataSort[0].type);
-  typesDataSort.forEach(item => {
-    let typesTemplate = `
+      const typesDataSort = typesData.reduce((unique, o) => {
+        if (!unique.some(obj => obj.type === o.type)) {
+          unique.push(o);
+        }
+        return unique;
+      }, []);
+
+      typeBtnWrapepr.innerHTML = '';
+      classBtnsDisplay(typesDataSort[0].type);
+      // classfilter(typesDataSort[0].type);
+      typesDataSort.forEach(item => {
+        let typesTemplate = `
     <li class="portfolio-main__item">
       <button class="portfolio-main__btn btn btn--portfolio" data-type="${item.type}">${item.type}</button>
     </li>
 
   `;
 
-    typeBtnWrapepr.innerHTML += typesTemplate;
-  });
-  typeBtnWrapepr.children[0].children
-    .item(0)
-    .classList.add('btn--portfolio-active');
-}
-
-//class
-
-function classBtnsDisplay(type) {
-  const classBtnWrapepr = document.querySelector('.portfolio-category');
-  const classData = [
-    {
-      id: 123456789,
-      class: 'all',
-    },
-  ];
-
-  galleryDate.forEach(item => {
-    if (selectType(item) == type) {
-      const classTemplate = {
-        id: Math.random(),
-        class: selectClass(item),
-      };
-      classData.push(classTemplate);
+        typeBtnWrapepr.innerHTML += typesTemplate;
+      });
+      typeBtnWrapepr.children[0].children
+        .item(0)
+        .classList.add('btn--portfolio-active');
     }
-  });
 
-  console.log(classData);
+    //class
 
-  const classDataSort = classData.reduce((unique, o) => {
-    if (!unique.some(obj => obj.class === o.class)) {
-      unique.push(o);
-    }
-    return unique;
-  }, []);
-  classBtnWrapepr.innerHTML = '';
-  classDataSort.forEach(item => {
-    let classTemplate = `
+    function classBtnsDisplay(type) {
+      const classBtnWrapepr = document.querySelector('.portfolio-category');
+      const classData = [
+        {
+          id: 123456789,
+          class: 'all',
+        },
+      ];
+
+      galleryDate.forEach(item => {
+        if (selectType(item) == type) {
+          const classTemplate = {
+            id: Math.random(),
+            class: selectClass(item),
+          };
+          classData.push(classTemplate);
+        }
+      });
+
+      const classDataSort = classData.reduce((unique, o) => {
+        if (!unique.some(obj => obj.class === o.class)) {
+          unique.push(o);
+        }
+        return unique;
+      }, []);
+      classBtnWrapepr.innerHTML = '';
+      classDataSort.forEach(item => {
+        let classTemplate = `
     <li class="portfolio-category__item">
       <button class="portfolio-category__btn btn btn--category portfolio-category__btn--portraits" data-class="${item.class}">${item.class}</button>
     </li>
   `;
-    classBtnWrapepr.innerHTML += classTemplate;
-    classfilter(type, classDataSort[0].class);
-  });
-  classBtnWrapepr.children[0].children
-    .item(0)
-    .classList.add('btn--category-active');
-}
-
-const typeBtn = document.querySelectorAll('[data-type]');
-
-typeBtn.forEach(item => {
-  item.addEventListener('click', () => {
-    typeBtn.forEach(el => {
-      el.classList.remove('btn--portfolio-active');
-    });
-    item.classList.add('btn--portfolio-active');
-    classBtnsDisplay(item.dataset.type);
-  });
-});
-
-function classfilter(itemsType, itemClass) {
-  const classBtna = document.querySelectorAll('[data-class]');
-
-  classBtna.forEach(item => {
-    galleryDisplay(itemsType, itemClass);
-
-    item.addEventListener('click', () => {
-      classBtna.forEach(el => {
-        el.classList.remove('btn--category-active');
+        classBtnWrapepr.innerHTML += classTemplate;
+        classfilter(type, classDataSort[0].class);
       });
-      item.classList.add('btn--category-active');
-      galleryDisplay(itemsType, item.dataset.class);
+      classBtnWrapepr.children[0].children
+        .item(0)
+        .classList.add('btn--category-active');
+    }
+
+    const typeBtn = document.querySelectorAll('[data-type]');
+
+    typeBtn.forEach(item => {
+      item.addEventListener('click', () => {
+        typeBtn.forEach(el => {
+          el.classList.remove('btn--portfolio-active');
+        });
+        item.classList.add('btn--portfolio-active');
+        classBtnsDisplay(item.dataset.type);
+      });
     });
-  });
-}
 
-//photos
-function galleryDisplay(itemType, itemClass) {
-  const itemsWrapper = document.querySelector('.gallery');
+    function classfilter(itemsType, itemClass) {
+      const classBtna = document.querySelectorAll('[data-class]');
 
-  itemsWrapper.innerHTML = '';
+      classBtna.forEach(item => {
+        galleryDisplay(itemsType, itemClass);
 
-  galleryDate.forEach(item => {
-    if (item.viewing == 'video') {
-      if (itemClass == 'all' && selectType(item) == itemType) {
-        itemsWrapper.classList.add('gallery--video');
-        let galleryItem = `
+        item.addEventListener('click', () => {
+          classBtna.forEach(el => {
+            el.classList.remove('btn--category-active');
+          });
+          item.classList.add('btn--category-active');
+          galleryDisplay(itemsType, item.dataset.class);
+        });
+      });
+    }
+
+    //photos
+    function galleryDisplay(itemType, itemClass) {
+      const itemsWrapper = document.querySelector('.gallery');
+
+      itemsWrapper.innerHTML = '';
+
+      galleryDate.forEach(item => {
+        if (item.viewing == 'video') {
+          if (itemClass == 'all' && selectType(item) == itemType) {
+            itemsWrapper.classList.add('gallery--video');
+            let galleryItem = `
       <li id="${item.id}" class="gallery__item gallery__item-video">
         <div class="gallery__item-video-title-wrapper">
         <h4 class="gallery__item-video-title title title--contacts">
@@ -802,19 +429,19 @@ function galleryDisplay(itemType, itemClass) {
         </h4>
         </div>
         <img alt="${selectDesc(item)}" class="gallery__video-poster" src='${
-          item.imgMinUrl
-        }'>
+              item.imgMinUrl
+            }'>
       </li>
       `;
 
-        itemsWrapper.innerHTML += galleryItem;
-      } else if (
-        (selectType(item) == itemType && selectClass(item) == itemClass) ||
-        itemType == '' ||
-        itemClass == ''
-      ) {
-        itemsWrapper.classList.add('gallery--video');
-        let galleryItem = `
+            itemsWrapper.innerHTML += galleryItem;
+          } else if (
+            (selectType(item) == itemType && selectClass(item) == itemClass) ||
+            itemType == '' ||
+            itemClass == ''
+          ) {
+            itemsWrapper.classList.add('gallery--video');
+            let galleryItem = `
       <li id="${item.id}" class="gallery__item gallery__item-video">
       <div class="gallery__item-video-title-wrapper">
         <h4 class="gallery__item-video-title title title--contacts">
@@ -822,66 +449,66 @@ function galleryDisplay(itemType, itemClass) {
         </h4>
         </div>
         <img alt="${selectDesc(item)}" class="gallery__video-poster" src='${
-          item.imgMinUrl
-        }'>
+              item.imgMinUrl
+            }'>
       </li>
       `;
 
-        itemsWrapper.innerHTML += galleryItem;
-      }
-    } else {
-      if (itemClass == 'all' && selectType(item) == itemType) {
-        itemsWrapper.classList.remove('gallery--video');
+            itemsWrapper.innerHTML += galleryItem;
+          }
+        } else {
+          if (itemClass == 'all' && selectType(item) == itemType) {
+            itemsWrapper.classList.remove('gallery--video');
 
-        let galleryItem = `
+            let galleryItem = `
       <li id="${item.id}" class="gallery__item">
         <img alt="${selectDesc(item)}" class="gallery__img" src='${
-          item.imgMinUrl
-        }'>
+              item.imgMinUrl
+            }'>
       </li>
       `;
 
-        itemsWrapper.innerHTML += galleryItem;
-      } else if (
-        (selectType(item) == itemType && selectClass(item) == itemClass) ||
-        itemType == '' ||
-        itemClass == ''
-      ) {
-        itemsWrapper.classList.remove('gallery--video');
+            itemsWrapper.innerHTML += galleryItem;
+          } else if (
+            (selectType(item) == itemType && selectClass(item) == itemClass) ||
+            itemType == '' ||
+            itemClass == ''
+          ) {
+            itemsWrapper.classList.remove('gallery--video');
 
-        let galleryItem = `
+            let galleryItem = `
       <li id="${item.id}" class="gallery__item">
         <img alt="${selectDesc(item)}" class="gallery__img" src='${
-          item.imgMinUrl
-        }'>
+              item.imgMinUrl
+            }'>
       </li>
       `;
 
-        itemsWrapper.innerHTML += galleryItem;
-      }
+            itemsWrapper.innerHTML += galleryItem;
+          }
+        }
+        modalView();
+      });
     }
-    modalView();
-  });
-}
 
-//modal photo viewing
+    //modal photo viewing
 
-function modalView() {
-  const galleryModalBtn = document.querySelectorAll('.gallery__item');
-  const galleryModal = document.querySelector('.portfolio__modal');
+    function modalView() {
+      const galleryModalBtn = document.querySelectorAll('.gallery__item');
+      const galleryModal = document.querySelector('.portfolio__modal');
 
-  galleryModalBtn.forEach(item => {
-    item.addEventListener('click', () => {
-      galleryModal.classList.add('portfolio__modal-bg');
-      document.querySelector('body').classList.add('dis-scroll');
+      galleryModalBtn.forEach(item => {
+        item.addEventListener('click', () => {
+          galleryModal.classList.add('portfolio__modal-bg');
+          document.querySelector('body').classList.add('dis-scroll');
 
-      const galleryModalBtnId = item.getAttribute('id');
+          const galleryModalBtnId = item.getAttribute('id');
 
-      galleryModal.innerHTML = '';
-      galleryDate.forEach(item => {
-        if (item.id == galleryModalBtnId) {
-          if (item.viewing == 'video') {
-            let modalTemplate = `
+          galleryModal.innerHTML = '';
+          galleryDate.forEach(item => {
+            if (item.id == galleryModalBtnId) {
+              if (item.viewing == 'video') {
+                let modalTemplate = `
 
 		  	<button class="portfolio__modal-btn btn btn--close"></button>
         <div class="portfolio__modal-preloader image-preloader ">
@@ -926,16 +553,16 @@ function modalView() {
 			</div>
 		</div>
         `;
-            galleryModal.innerHTML = modalTemplate;
-            document
-              .querySelector('.player__video')
-              .addEventListener('canplay', () => {
-                document.querySelector('.image-preloader').style.display =
-                  'none';
-              });
-            videoPlayer();
-          } else {
-            let modalTemplate = `
+                galleryModal.innerHTML = modalTemplate;
+                document
+                  .querySelector('.player__video')
+                  .addEventListener('canplay', () => {
+                    document.querySelector('.image-preloader').style.display =
+                      'none';
+                  });
+                videoPlayer();
+              } else {
+                let modalTemplate = `
           <div class="portfolio__modal-preloader image-preloader ">
           <ul class="image-preloader-inner list-reset">
 
@@ -953,45 +580,47 @@ function modalView() {
 		  	<button class="portfolio__modal-btn btn btn--close"></button>
         
         <img alt="${selectDesc(item)}" class="portfolio__modal-img" src='${
-              item.imgUrl
-            }'>
+                  item.imgUrl
+                }'>
         `;
-            galleryModal.innerHTML += modalTemplate;
-            document.querySelector('.portfolio__modal-img').onload =
-              function () {
-                document.querySelector(
-                  '.portfolio__modal-img'
-                ).style.opacity = 1;
-                document.querySelector('.image-preloader').style.visibility =
-                  'hidden';
-              };
-            document
-              .querySelector('.image-preloader')
-              .addEventListener('click', galleryModalClose);
-          }
-          const galleryModalCloseBtn = document.querySelector(
-            '.portfolio__modal-btn'
-          );
+                galleryModal.innerHTML += modalTemplate;
+                document.querySelector('.portfolio__modal-img').onload =
+                  function () {
+                    document.querySelector(
+                      '.portfolio__modal-img'
+                    ).style.opacity = 1;
+                    document.querySelector(
+                      '.image-preloader'
+                    ).style.visibility = 'hidden';
+                  };
+                document
+                  .querySelector('.image-preloader')
+                  .addEventListener('click', galleryModalClose);
+              }
+              const galleryModalCloseBtn = document.querySelector(
+                '.portfolio__modal-btn'
+              );
 
-          galleryModalCloseBtn.addEventListener('click', () => {
-            galleryModalClose();
-          });
-          galleryModal.addEventListener('click', e => {
-            if (e.target == galleryModal) {
-              galleryModalClose();
+              galleryModalCloseBtn.addEventListener('click', () => {
+                galleryModalClose();
+              });
+              galleryModal.addEventListener('click', e => {
+                if (e.target == galleryModal) {
+                  galleryModalClose();
+                }
+              });
             }
           });
-        }
+        });
       });
-    });
-  });
 
-  function galleryModalClose() {
-    galleryModal.classList.remove('portfolio__modal-bg');
-    galleryModal.innerHTML = '';
-    document.querySelector('body').classList.remove('dis-scroll');
-  }
-}
+      function galleryModalClose() {
+        galleryModal.classList.remove('portfolio__modal-bg');
+        galleryModal.innerHTML = '';
+        document.querySelector('body').classList.remove('dis-scroll');
+      }
+    }
+  });
 
 const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
@@ -1054,10 +683,6 @@ function heroModalOpen() {
   heroModal.classList.toggle('hero-modal__inner--open');
   document.querySelector('body').classList.toggle('dis-scroll');
 }
-
-// const lang = document.getElementsByTagName('html')[0].getAttribute('lang');
-
-// console.log(lang);
 
 function videoPlayer() {
   const playerWrapper = document.querySelector('.player');

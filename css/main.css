@@ -591,7 +591,7 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background-image: url(../images/zoom.svg);
+  background-image: url(../images/sprite.svg#zoom);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
@@ -664,8 +664,9 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 134px;
-  background-image: url(../images/play-video.svg);
+  background-image: url(../images/sprite.svg#play-video);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   z-index: 2;
   opacity: 0;
@@ -708,6 +709,9 @@
 }
 .gallery__item-video-title {
   transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 768px) {
   .gallery__item-video-title {

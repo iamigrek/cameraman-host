@@ -1,0 +1,508 @@
+[
+  {
+    "id": "4mcjd7j0son1m7z0m84nf9",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-1.jpg",
+    "imgMinUrl": "./images/portraits-1-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Портрет мужчины"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Портрет чоловіка"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Portrait of a man"
+    }
+  },
+  {
+    "id": "6qlfetxx9q40hw3l0qgu9lh",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-2.jpg",
+    "imgMinUrl": "./images/portraits-2-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Девушка в поле"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Дівчина в полі"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Girl in the field"
+    }
+  },
+  {
+    "id": "x3v752grwsaf1yx46biol",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-3.jpg",
+    "imgMinUrl": "./images/portraits-3-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Портрет военного"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Портрет військового"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Portrait of a military man"
+    }
+  },
+  {
+    "id": "lejw5o9ibkdivbo2u6ps",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-4.jpg",
+    "imgMinUrl": "./images/portraits-4-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Девушка в платке"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Дівчина в хустці"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Girl in a headscarf"
+    }
+  },
+  {
+    "id": "qibd9zoxel86erxy7jrflt",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-5.jpg",
+    "imgMinUrl": "./images/portraits-5-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Девушка с букетом"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Дівчина з букетом"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Girl with a bouquet"
+    }
+  },
+  {
+    "id": "wc7w2aeoudlqz79br7maqq",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-6.jpg",
+    "imgMinUrl": "./images/portraits-6-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Урбанистический портрет мужчины"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Урбаністичний портрет чоловіка"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Urban portrait of a man"
+    }
+  },
+  {
+    "id": "jo2c5usn6ja0mhvpzmv0ofq",
+    "viewing": "photo",
+    "imgUrl": "./images/portraits-7.jpg",
+    "imgMinUrl": "./images/portraits-7-min.jpg",
+    "ru": {
+      "class": "Портреты",
+      "type": "Фото",
+      "desc": "Девушка с мыльными пузырями"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Фото",
+      "desc": "Дівчина з мильними бульбашками"
+    },
+    "en": {
+      "class": "Portraits",
+      "type": "Photo",
+      "desc": "Girl with soap bubbles"
+    }
+  },
+  {
+    "id": "05z08otl1a6lkk51svv31o",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-1.jpg",
+    "imgMinUrl": "./images/reportage-1-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "x7xs8iix46t8v1c5fixvr",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-2.jpg",
+    "imgMinUrl": "./images/reportage-2-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "m4ctlsgsdu1q1o63av0t9",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-3.jpg",
+    "imgMinUrl": "./images/reportage-3-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "6htij3g0yuc83mrpjatfwq",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-4.jpg",
+    "imgMinUrl": "./images/reportage-4-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "gl01qawrrtediope5ipra",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-7.jpg",
+    "imgMinUrl": "./images/reportage-7-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "2t30r9ihdlklzx9k69mp6",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-8.jpg",
+    "imgMinUrl": "./images/reportage-8-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "axk6fhmj1hs4gqyj5p1iaj",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-9.jpg",
+    "imgMinUrl": "./images/reportage-9-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "4dnkibel3o8tgnc55oewc",
+    "viewing": "photo",
+    "imgUrl": "./images/reportage-10.jpg",
+    "imgMinUrl": "./images/reportage-10-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": "Репортаж"
+    },
+    "uk": {
+      "class": "Репортаж",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Reportage",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "n1z1hbfvd1d41x1tmowra",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-1.jpg",
+    "imgMinUrl": "./images/wedding-1-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "3t30yj6spa1crqr214vqh",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-2.jpg",
+    "imgMinUrl": "./images/wedding-2-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "2x8ctqayl9pjv7mk3b5q6",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-3.jpg",
+    "imgMinUrl": "./images/wedding-3-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "su60zgg57apneiqwznkxur",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-4.jpg",
+    "imgMinUrl": "./images/wedding-4-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "vaxdsxoqr2n2vjatr4ir08",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-5.jpg",
+    "imgMinUrl": "./images/wedding-5-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "p3inlbra0h9bruexro3l4s",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-6.jpg",
+    "imgMinUrl": "./images/wedding-6-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "nskwqu64ybggtb8u900um",
+    "viewing": "photo",
+    "imgUrl": "./images/wedding-7.jpg",
+    "imgMinUrl": "./images/wedding-7-min.jpg",
+    "ru": {
+      "class": "Свадьба",
+      "type": "Фото",
+      "desc": "Свадьба"
+    },
+    "uk": {
+      "class": "Весілля",
+      "type": "Фото",
+      "desc": ""
+    },
+    "en": {
+      "class": "Wedding",
+      "type": "Photo",
+      "desc": ""
+    }
+  },
+  {
+    "id": "01x3z7so95f7o2xvltdzzlc",
+    "viewing": "video",
+    "videoType": "video/mp4",
+    "imgUrl": "./images/videos/1.mp4",
+    "imgMinUrl": "./images/portraits-7-min.jpg",
+    "ru": {
+      "class": "Репортаж",
+      "type": "Видео",
+      "desc": "реклама нижнего белья и что то еще, веники"
+    },
+    "uk": {
+      "class": "Портрети",
+      "type": "Відео",
+      "desc": "Портрет мужчины"
+    },
+    "en": {
+      "class": "Portriect",
+      "type": "Video",
+      "desc": "Портрет мужчины"
+    }
+  },
+  {
+    "id": "n3vadmic18pkvl44wy4qe",
+    "viewing": "video",
+    "videoType": "video/mp4",
+    "imgUrl": "./images/videos/2.mp4",
+    "imgMinUrl": "./images/portraits-6-min.jpg",
+    "ru": {
+      "class": "Что то еще",
+      "type": "Видео",
+      "desc": "Что то еще"
+    },
+    "uk": {
+      "class": "Что то еще",
+      "type": "Відео",
+      "desc": "Что то еще"
+    },
+    "en": {
+      "class": "Something else",
+      "type": "Video",
+      "desc": "Something else"
+    }
+  }
+]
