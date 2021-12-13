@@ -2,8 +2,8 @@
   {
     "id": "4mcjd7j0son1m7z0m84nf9",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-1.jpg",
-    "imgMinUrl": "./images/portraits-1-min.jpg",
+    "imgUrl": "./images/portraits/portraits-1.jpg",
+    "imgMinUrl": "./images/portraits/portraits-1-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -23,8 +23,8 @@
   {
     "id": "6qlfetxx9q40hw3l0qgu9lh",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-2.jpg",
-    "imgMinUrl": "./images/portraits-2-min.jpg",
+    "imgUrl": "./images/portraits/portraits-2.jpg",
+    "imgMinUrl": "./images/portraits/portraits-2-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -44,8 +44,8 @@
   {
     "id": "x3v752grwsaf1yx46biol",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-3.jpg",
-    "imgMinUrl": "./images/portraits-3-min.jpg",
+    "imgUrl": "./images/portraits/portraits-3.jpg",
+    "imgMinUrl": "./images/portraits/portraits-3-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -65,8 +65,8 @@
   {
     "id": "lejw5o9ibkdivbo2u6ps",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-4.jpg",
-    "imgMinUrl": "./images/portraits-4-min.jpg",
+    "imgUrl": "./images/portraits/portraits-4.jpg",
+    "imgMinUrl": "./images/portraits/portraits-4-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -86,8 +86,8 @@
   {
     "id": "qibd9zoxel86erxy7jrflt",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-5.jpg",
-    "imgMinUrl": "./images/portraits-5-min.jpg",
+    "imgUrl": "./images/portraits/portraits-5.jpg",
+    "imgMinUrl": "./images/portraits/portraits-5-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -107,8 +107,8 @@
   {
     "id": "wc7w2aeoudlqz79br7maqq",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-6.jpg",
-    "imgMinUrl": "./images/portraits-6-min.jpg",
+    "imgUrl": "./images/portraits/portraits-6.jpg",
+    "imgMinUrl": "./images/portraits/portraits-6-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -128,8 +128,8 @@
   {
     "id": "jo2c5usn6ja0mhvpzmv0ofq",
     "viewing": "photo",
-    "imgUrl": "./images/portraits-7.jpg",
-    "imgMinUrl": "./images/portraits-7-min.jpg",
+    "imgUrl": "./images/portraits/portraits-7.jpg",
+    "imgMinUrl": "./images/portraits/portraits-7-min.jpg",
     "ru": {
       "class": "Портреты",
       "type": "Фото",
@@ -149,8 +149,8 @@
   {
     "id": "05z08otl1a6lkk51svv31o",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-1.jpg",
-    "imgMinUrl": "./images/reportage-1-min.jpg",
+    "imgUrl": "./images/reportage/reportage-1.jpg",
+    "imgMinUrl": "./images/reportage/reportage-1-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -170,8 +170,8 @@
   {
     "id": "x7xs8iix46t8v1c5fixvr",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-2.jpg",
-    "imgMinUrl": "./images/reportage-2-min.jpg",
+    "imgUrl": "./images/reportage/reportage-2.jpg",
+    "imgMinUrl": "./images/reportage/reportage-2-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -191,8 +191,8 @@
   {
     "id": "m4ctlsgsdu1q1o63av0t9",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-3.jpg",
-    "imgMinUrl": "./images/reportage-3-min.jpg",
+    "imgUrl": "./images/reportage/reportage-3.jpg",
+    "imgMinUrl": "./images/reportage/reportage-3-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -212,8 +212,8 @@
   {
     "id": "6htij3g0yuc83mrpjatfwq",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-4.jpg",
-    "imgMinUrl": "./images/reportage-4-min.jpg",
+    "imgUrl": "./images/reportage/reportage-4.jpg",
+    "imgMinUrl": "./images/reportage/reportage-4-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -233,8 +233,8 @@
   {
     "id": "gl01qawrrtediope5ipra",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-7.jpg",
-    "imgMinUrl": "./images/reportage-7-min.jpg",
+    "imgUrl": "./images/reportage/reportage-7.jpg",
+    "imgMinUrl": "./images/reportage/reportage-7-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -254,8 +254,8 @@
   {
     "id": "2t30r9ihdlklzx9k69mp6",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-8.jpg",
-    "imgMinUrl": "./images/reportage-8-min.jpg",
+    "imgUrl": "./images/reportage/reportage-8.jpg",
+    "imgMinUrl": "./images/reportage/reportage-8-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -275,8 +275,8 @@
   {
     "id": "axk6fhmj1hs4gqyj5p1iaj",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-9.jpg",
-    "imgMinUrl": "./images/reportage-9-min.jpg",
+    "imgUrl": "./images/reportage/reportage-9.jpg",
+    "imgMinUrl": "./images/reportage/reportage-9-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -296,8 +296,8 @@
   {
     "id": "4dnkibel3o8tgnc55oewc",
     "viewing": "photo",
-    "imgUrl": "./images/reportage-10.jpg",
-    "imgMinUrl": "./images/reportage-10-min.jpg",
+    "imgUrl": "./images/reportage/reportage-10.jpg",
+    "imgMinUrl": "./images/reportage/reportage-10-min.jpg",
     "ru": {
       "class": "Репортаж",
       "type": "Фото",
@@ -317,8 +317,8 @@
   {
     "id": "n1z1hbfvd1d41x1tmowra",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-1.jpg",
-    "imgMinUrl": "./images/wedding-1-min.jpg",
+    "imgUrl": "./images/wedding/wedding-1.jpg",
+    "imgMinUrl": "./images/wedding/wedding-1-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -338,8 +338,8 @@
   {
     "id": "3t30yj6spa1crqr214vqh",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-2.jpg",
-    "imgMinUrl": "./images/wedding-2-min.jpg",
+    "imgUrl": "./images/wedding/wedding-2.jpg",
+    "imgMinUrl": "./images/wedding/wedding-2-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -359,8 +359,8 @@
   {
     "id": "2x8ctqayl9pjv7mk3b5q6",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-3.jpg",
-    "imgMinUrl": "./images/wedding-3-min.jpg",
+    "imgUrl": "./images/wedding/wedding-3.jpg",
+    "imgMinUrl": "./images/wedding/wedding-3-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -380,8 +380,8 @@
   {
     "id": "su60zgg57apneiqwznkxur",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-4.jpg",
-    "imgMinUrl": "./images/wedding-4-min.jpg",
+    "imgUrl": "./images/wedding/wedding-4.jpg",
+    "imgMinUrl": "./images/wedding/wedding-4-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -401,8 +401,8 @@
   {
     "id": "vaxdsxoqr2n2vjatr4ir08",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-5.jpg",
-    "imgMinUrl": "./images/wedding-5-min.jpg",
+    "imgUrl": "./images/wedding/wedding-5.jpg",
+    "imgMinUrl": "./images/wedding/wedding-5-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -422,8 +422,8 @@
   {
     "id": "p3inlbra0h9bruexro3l4s",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-6.jpg",
-    "imgMinUrl": "./images/wedding-6-min.jpg",
+    "imgUrl": "./images/wedding/wedding-6.jpg",
+    "imgMinUrl": "./images/wedding/wedding-6-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -443,8 +443,8 @@
   {
     "id": "nskwqu64ybggtb8u900um",
     "viewing": "photo",
-    "imgUrl": "./images/wedding-7.jpg",
-    "imgMinUrl": "./images/wedding-7-min.jpg",
+    "imgUrl": "./images/wedding/wedding-7.jpg",
+    "imgMinUrl": "./images/wedding/wedding-7-min.jpg",
     "ru": {
       "class": "Свадьба",
       "type": "Фото",
@@ -466,21 +466,21 @@
     "viewing": "video",
     "videoType": "video/mp4",
     "imgUrl": "./images/videos/1.mp4",
-    "imgMinUrl": "./images/portraits-7-min.jpg",
+    "imgMinUrl": "./images/preview-1.jpg",
     "ru": {
-      "class": "Репортаж",
+      "class": "Свадьбы",
       "type": "Видео",
-      "desc": "реклама нижнего белья и что то еще, веники"
+      "desc": "Свадьба Юлии и Тараса"
     },
     "uk": {
-      "class": "Портрети",
+      "class": "Весілля",
       "type": "Відео",
-      "desc": "Портрет мужчины"
+      "desc": "Весілля Юлії та Тараса"
     },
     "en": {
-      "class": "Portriect",
+      "class": "Weddings",
       "type": "Video",
-      "desc": "Портрет мужчины"
+      "desc": "Julia and Taras wedding"
     }
   },
   {
@@ -488,21 +488,21 @@
     "viewing": "video",
     "videoType": "video/mp4",
     "imgUrl": "./images/videos/2.mp4",
-    "imgMinUrl": "./images/portraits-6-min.jpg",
+    "imgMinUrl": "./images/preview-2.jpg",
     "ru": {
-      "class": "Что то еще",
+      "class": "Клипы",
       "type": "Видео",
-      "desc": "Что то еще"
+      "desc": "Клип Медсестра в персиковых кедах"
     },
     "uk": {
-      "class": "Что то еще",
+      "class": "Кліпи",
       "type": "Відео",
-      "desc": "Что то еще"
+      "desc": "Кліп Медсестра у персикових кедах"
     },
     "en": {
-      "class": "Something else",
+      "class": "Music videos",
       "type": "Video",
-      "desc": "Something else"
+      "desc": "Nurse in Peach Sneakers music video"
     }
   }
 ]

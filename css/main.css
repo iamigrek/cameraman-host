@@ -618,7 +618,7 @@
 .gallery__video-poster {
   position: absolute;
   top: 50%;
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   left: 0;
@@ -851,6 +851,11 @@
   margin-bottom: 55px;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .contacts__title {
+    margin-bottom: 20px;
+  }
+}
 
 .contacts-social {
   display: flex;
@@ -1021,9 +1026,6 @@
   align-items: center;
   padding: 10px 15px;
 }
-.player__volume {
-  margin-right: 20px;
-}
 .player__volume:hover + .player__volume-range {
   max-width: 300px;
   opacity: 1;
@@ -1034,7 +1036,7 @@
   max-width: 0;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  padding: 10px 0;
+  padding: 10px 0 10px 20px;
 }
 @media (max-width: 768px) {
   .player__volume-range {
